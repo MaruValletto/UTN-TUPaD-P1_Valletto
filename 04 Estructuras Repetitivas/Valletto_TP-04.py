@@ -54,3 +54,8 @@ while numero5 != numero_aleatorio:
     numero5 = int(input("Tu prediccion no es correcta, intentá otro numero:")) 
 print(f"¡Adivinaste en {intentos} intentos!")
 
+#6) Desarrolla un programa que imprima en pantalla todos los números pares comprendidos
+# entre 0 y 100, en orden decreciente.
+print ("Imprimiremos por pantalla todos los números pares que estan comprendidos entre 0 y 100, en orden descendente")
+for numero in range (100,-1,-2):
+    print (numero)
