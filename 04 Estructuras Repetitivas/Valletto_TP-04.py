@@ -59,3 +59,69 @@ print(f"¡Adivinaste en {intentos} intentos!")
 print ("Imprimiremos por pantalla todos los números pares que estan comprendidos entre 0 y 100, en orden descendente")
 for numero in range (100,-1,-2):
     print (numero)
+
+## Ejercicio 7: Crea un programa que calcule la suma de todos los números comprendidos entre 0 y un número entero positivo indicado por el usuario.
+
+print ("Calcularé la suma de todos los números comprendidos entre 0 y un número entero positivo que me indiques")
+numero7 = int(input("Ingresá un número entero positivo: "))
+suma = 0
+if numero7 < 0:
+    print ("El número ingresado no es positivo")
+else:
+    for i in range (0, numero7+1):
+        suma += i   
+print (f"La suma de los números comprendidos entre 0 y {numero7} es: {suma}")
+
+## Ejercicio 8: Escribe un programa que permita al usuario ingresar 100 números enteros. Luego, el programa debe indicar cuántos de estos números son pares, cuántos son impares, cuántos son negativos y cuántos son positivos. (Nota: para probar el programa puedes usar una cantidad menor, pero debe estar preparado para procesar 100 números con un solo cambio).
+
+print ("Si me indicas 100 numeros enteros, voy a contarte cuántos de ellos son pares, cuántos impares, cuántos positivos y cuántos negativos.")
+cont_ingresos = 0
+cont_pares = 0
+cont_impares = 0
+cont_positivos = 0
+cont_negativos = 0
+cont_ceros = 0
+
+while cont_ingresos < 10:
+    numero8 = int(input("Ingresá un número entero: "))
+    cont_ingresos += 1
+    print (f"Has ingresado {cont_ingresos} números enteros.")
+    if numero8 % 2 == 0:
+        cont_pares += 1
+    else:
+        cont_impares += 1
+    if numero8 > 0:
+        cont_positivos += 1
+    elif numero8 < 0:
+        cont_negativos += 1
+    else:
+        cont_ceros += 1
+print (f"En los números ingresados tenemos {cont_pares} numeros pares, {cont_impares} numeros impares, {cont_positivos} positivos, {cont_negativos} negativos y {cont_ceros} son ceros.")
+
+## Ejericio 9: Elabora un programa que permita al usuario ingresar 100 números enteros y luego calcule la media de esos valores. (Nota: puedes probar el programa con una cantidad menor, pero debe poder procesar 100 números cambiando solo un valor).
+
+print ("Si me indicas 100 numeros enteros, calcularé la media de esos valores..")
+contador = 0
+numero9 = 0
+suma = 0
+
+while contador < 5:
+    numero9 = int(input("Ingresá un número entero: "))
+    contador += 1
+    print (f"Has ingresado {contador} números enteros.")
+    suma += suma + numero9
+media = suma / contador
+print (f"La media de los números ingresados es: {media}")
+
+## Ejercicio 10: Escribe un programa que invierta el orden de los dígitos de un número ingresado por el usuario. Ejemplo: si el usuario ingresa 547, el programa debe mostrar 745.
+
+print ("Si me indicas un numero entero, voy a invertir el orden de los digitos")
+numero10 = int(input("Ingresá tu número: "))
+if numero10 > 0:
+    numero10 = str(numero10)
+    numero10 = numero10[::-1]
+else:
+    numero10 = str(numero10)
+    numero10 = numero10[1:][::-1]
+    numero10 = "-" + numero10
+print (f"El número invertido es: {numero10}")
