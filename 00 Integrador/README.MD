@@ -27,3 +27,5 @@ Implementación
 Ejecución
 
 Para ejecutar el programa y ver la jerarquía académica se necesita Python 3
+
+Video: https://youtu.be/U_bi5ujWya0
